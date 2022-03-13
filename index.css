@@ -313,3 +313,18 @@ h1 {
   color: white;
   position: relative;
 }
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+/* Mobile */
+@media (max-width: 739px) {
+  .select {
+    width: 80%;
+  }
+  .select2 {
+    width: 80%;
+  }
+  .select-custom {
+    width: 80%;
+  }
+}
