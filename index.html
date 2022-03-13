@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cứu trợ động vật Đà Nẵng</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <h1 class="animated fadeInDown"><i class="icon icon-arrow-down"></i></h1>
+    <h1 class="animated rotateIn">Tìm chó mèo lạc Đà Nẵng</h1>
+    <p>Thể loại</p>
+    <div class="select animated zoomIn">
+      <input type="radio" name="option" />
+      <i class="toggle icon icon-arrow-down"></i>
+      <i class="toggle icon icon-arrow-up"></i>
+      <span class="placeholder">Choose...</span>
+      <label class="option">
+        <input id="dog" type="radio" name="option" value="dog" />
+        <span class="title animated fadeIn"><i class="icon icon-speedometer"></i>Tìm Chó Lạc</span>
+      </label>
+      <label class="option">
+        <input id="cat" type="radio" name="option" value="cat" />
+        <span class="title animated fadeIn"><i class="icon icon-fire"></i>Tìm Mèo Lạc</span>
+      </label>
+      <!-- <label class="option">
+        <input type="radio" name="option" disabled />
+        <span class="title animated fadeIn"><i class="icon icon-handbag"></i>Handbag</span>
+      </label>
+      <label class="option">
+        <input type="radio" name="option" />
+        <span class="title animated fadeIn"><i class="icon icon-badge"></i>Badge</span>
+      </label> -->
+    </div>
+    <!-- <p>2. Disabled</p>
+    <div class="select animated zoomIn">
+      <input type="radio" name="option" disabled />
+      <i class="toggle icon icon-arrow-down"></i>
+      <i class="toggle icon icon-arrow-up"></i>
+      <span class="placeholder">Choose...</span>
+      <label class="option">
+        <input type="radio" name="option" />
+        <span class="title"><i class="icon icon-speedometer"></i>Speedometer</span>
+      </label>
+      <label class="option">
+        <input type="radio" name="option" />
+        <span class="title"><i class="icon icon-fire"></i>Fire</span>
+      </label>
+      <label class="option">
+        <input type="radio" name="option" disabled />
+        <span class="title"><i class="icon icon-handbag"></i>Handbag</span>
+      </label>
+      <label class="option">
+        <input type="radio" name="option" />
+        <span class="title"><i class="icon icon-badge"></i>Badge</span>
+      </label>
+    </div>
+    <br />
+    <br /> -->
+    <!-- <p>Thể Loại</p>
+    <div class="select2 animated zoomIn">
+      <label>
+        <input type="checkbox" name="placeholder" />
+        <i class="toggle icon icon-plus"></i>
+        <i class="toggle icon icon-minus"></i>
+        <span class="placeholder">Choose...</span>
+        <label class="option">
+          <input class="typePost" type="radio" name="option" value="dog" />
+          <span class="title animated fadeIn"><i class="icon icon-speedometer"></i>Tìm Chó Lạc</span>
+        </label>
+
+        <label class="option">
+          <input class="typePost" type="radio" name="option" value="cat" />
+          <span class="title animated fadeIn"><i class="icon icon-fire"></i>Tìm Mèo Lạc</span>
+        </label>
+      </label>
+    </div> -->
+    <p>Nội dung</p>
+    <div class="select-custom animated zoomIn">
+      <!-- You can toggle select (disabled) -->
+      <textarea name="" id="content"></textarea>
+    </div>
+    <p>Bài viết</p>
+    <div class="select-custom animated zoomIn">
+      <!-- You can toggle select (disabled) -->
+      <textarea name="" id="final" cols="30" rows="10"></textarea>
+    </div>
+    <button class="button" id="copy-button" data-clipboard-target="#final">Copy</button>
+    <script>
+      var clipboard = new Clipboard('#copy-button');
+      clipboard.on('success', function (e) {
+        alert('copy success');
+      });
+      clipboard.on('error', function (e) {
+        alert('copy fail');
+      });
+    </script>
+  </body>
+</html>
