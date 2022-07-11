@@ -27,6 +27,14 @@
         <input id="cat" type="radio" name="option" value="cat" />
         <span class="title animated fadeIn"><i class="icon icon-fire"></i>Tìm Mèo Lạc</span>
       </label>
+      <label class="option">
+        <input id="dogFindOwner" type="radio" name="option" value="dogFindOwner" />
+        <span class="title animated fadeIn"><i class="icon icon-speedometer"></i>Chó lạc tìm chủ</span>
+      </label>
+      <label class="option">
+        <input id="catFindOwner" type="radio" name="option" value="catFindOwner" />
+        <span class="title animated fadeIn"><i class="icon icon-fire"></i>Mèo lạc tìm chủ</span>
+      </label>
       <!-- <label class="option">
         <input type="radio" name="option" disabled />
         <span class="title animated fadeIn"><i class="icon icon-handbag"></i>Handbag</span>
@@ -91,13 +99,13 @@
     </div>
     <button class="button" id="copy-button" data-clipboard-target="#final">Copy</button>
     <script>
-      var clipboard = new Clipboard('#copy-button');
-      clipboard.on('success', function (e) {
-        alert('copy success');
-      });
-      clipboard.on('error', function (e) {
-        alert('copy fail');
-      });
+      var clipboard = new Clipboard("#copy-button")
+      clipboard.on("success", function (e) {
+        alert("copy success")
+      })
+      clipboard.on("error", function (e) {
+        alert("copy fail")
+      })
     </script>
   </body>
 </html>
