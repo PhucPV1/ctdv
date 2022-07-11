@@ -1,11 +1,11 @@
 window.onload = () => {
-  var content = document.querySelector("#content")
   var final = document.querySelector("#final")
   var optionsInput = document.querySelectorAll('input[name="option"]')
 
   var title
 
   handleContent = () => {
+    var content = document.querySelector("#content")
     var optionElement = Array.from(optionsInput).filter((a) => a.checked)
     var option = optionElement[0].getAttribute("value")
 
