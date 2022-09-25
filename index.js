@@ -32,7 +32,7 @@ window.onload = () => {
     }
     final.value = `${title}
     
-${content.value}
+${content.value.replaceAll(" :", ":")}
 
 ${footer}`
   }
