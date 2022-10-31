@@ -39,4 +39,5 @@ window.onload = () => {
 
   content.onkeyup = handleContent
   content.onpaste = handleContent
+  content.onchange = handleContent
 }
