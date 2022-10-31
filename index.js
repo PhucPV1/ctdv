@@ -5,7 +5,7 @@ window.onload = () => {
 
   let title
 
-  handleContent = () => {
+  let handleContent = () => {
     let optionElement = Array.from(optionsInput).filter((a) => a.checked)
     let option = optionElement.length ? optionElement[0].getAttribute("value") : ""
     switch (option) {
