@@ -32,9 +32,9 @@ window.onload = () => {
     }
     final.value = `${title}
     
-    ${content.value.replaceAll(" :", ":")}
+${content.value.replaceAll(" :", ":")}
     
-    ${footer}`
+${footer}`
   }
 
   content.onkeyup = handleContent
